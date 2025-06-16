@@ -9,7 +9,7 @@ import java.util.List;
 public class NotificationService {
     private MessageSender sender;
 
-    // Injection du moyen d'envoi (console, email, etc.)
+    // Injection du moyen d'envoi (console, email)
     public NotificationService(MessageSender sender) {
         this.sender = sender;
     }
@@ -18,7 +18,7 @@ public class NotificationService {
     public void notifyEmployees(List<Employee> employees, Service service, String message) {
         for (Employee e : employees) {
             if (e.getSubscribedServices().contains(service)) {
-                String personalized = "Salut " + e.getEmail() + ", " + message;
+                String personalized = "Bonjour/Bonsoir" + e.getEmail() + ", " + message;
                 sender.send(e, personalized);
             }
         }

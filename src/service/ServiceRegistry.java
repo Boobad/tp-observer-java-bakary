@@ -3,6 +3,7 @@ package service;
 import model.Service;
 import java.util.*;
 
+// Registre contenant la liste des services disponibles
 public class ServiceRegistry {
     private List<Service> services = new ArrayList<>();
 

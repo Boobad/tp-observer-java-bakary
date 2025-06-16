@@ -1,5 +1,6 @@
 package model;
 
+// Classe représentant un service auquel un employé peut s’abonner
 public class Service {
     private String name;
 
@@ -9,6 +10,7 @@ public class Service {
 
     public String getName() { return name; }
 
+    // Redéfinition pour vérifier si deux services sont les mêmes via leur nom
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

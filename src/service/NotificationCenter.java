@@ -5,6 +5,7 @@ import interfaces.Subject; // anciennement interfaces.Observable
 
 import java.util.*;
 
+// Centre de notification qui prévient tous les observateurs
 public class NotificationCenter implements Subject {
     private List<Observer> observers = new ArrayList<>();
 

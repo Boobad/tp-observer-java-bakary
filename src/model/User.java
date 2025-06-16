@@ -1,5 +1,6 @@
 package model;
 
+// Classe abstraite représentant un utilisateur
 public abstract class User {
     protected String email;
     protected String password;

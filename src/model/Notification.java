@@ -9,6 +9,6 @@ public class Notification {
 
     // Retourne le message personnalisé pour un employé donné
     public String getPersonalizedMessage(String employeeName) {
-        return "Salut " + employeeName + ". " + content;
+        return "Bonjour/Bonsoir" + employeeName + ". " + content;
     }
 }
